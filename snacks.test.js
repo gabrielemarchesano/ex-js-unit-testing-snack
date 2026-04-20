@@ -1,6 +1,7 @@
 const { 
   getInitials,
-  createSlug
+  createSlug,
+  average
 } = require("./snacks");
 
 // Snack 1
@@ -12,3 +13,8 @@ test('La funzione "getInitials" restituisce le iniziali di un nome completo', ()
 test('La funzione "createSlug" restituisce una stringa in lowercase', () => { 
   expect(createSlug("JAVAsCript")).toBe("javascript");
 });
+
+// Snack 3
+test('La funzione "average" calcola la media aritmetica di un array di numeri', () => { 
+  expect(average([1, 2, 3, 4, 5])).toBe(3);
+})

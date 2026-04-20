@@ -7,7 +7,14 @@ const getInitials = fullname => {
 // Snack 2
 const createSlug = string => string.toLowerCase();
 
+// Snack 3
+const average = numbers => {
+  const sum = numbers.reduce((acc, num) => acc + num, 0);
+  return sum / numbers.length
+}
+
 module.exports = {
   getInitials,
-  createSlug
+  createSlug,
+  average
 }
