@@ -4,7 +4,7 @@ const getInitials = fullname => {
   return initials[0].slice(0, 1) + initials[1].slice(0, 1);
 }
 
-// Snack 2
+// Snack 2/4
 const createSlug = string => string.toLowerCase().replaceAll(" ", "-");
 
 // Snack 3
@@ -13,8 +13,15 @@ const average = numbers => {
   return sum / numbers.length
 }
 
+// Snack 5
+const isPalindrome = string => {
+  const reversed = string.split("").reverse().join("");
+  return string === reversed;
+}
+
 module.exports = {
   getInitials,
   createSlug,
-  average
+  average,
+  isPalindrome
 }
