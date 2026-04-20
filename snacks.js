@@ -24,9 +24,13 @@ const isPalindrome = string => {
   return string === reversed;
 }
 
+// Snack 7
+const findPostById = (posts, id) => posts.find(post => post.id === id)
+
 module.exports = {
   getInitials,
   createSlug,
   average,
-  isPalindrome
+  isPalindrome,
+  findPostById
 }
