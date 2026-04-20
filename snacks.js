@@ -4,8 +4,13 @@ const getInitials = fullname => {
   return initials[0].slice(0, 1) + initials[1].slice(0, 1);
 }
 
-// Snack 2/4
-const createSlug = string => string.toLowerCase().replaceAll(" ", "-");
+// Snack 2/4/6
+const createSlug = string => {
+  if(!string){
+    throw new Error("Stringa non valida")
+  }
+  return string.toLowerCase().replaceAll(" ", "-");
+}
 
 // Snack 3
 const average = numbers => {
