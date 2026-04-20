@@ -5,7 +5,7 @@ const getInitials = fullname => {
 }
 
 // Snack 2
-const createSlug = string => string.toLowerCase();
+const createSlug = string => string.toLowerCase().replaceAll(" ", "-");
 
 // Snack 3
 const average = numbers => {
